@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<body>
+
+<input type="number" id="myData">
+
+<script>
+function myFunction() {
+    var greeting, x;
+    x = document.getElementById("myData").value;
+    if (x < 60) {
+        greeting = "不及格";
+    } else  {
+        greeting = "及格";
+  }
+	document.getElementById("result").innerHTML = greeting;
+}
+</script>
+
+<output id="result"></output>
+<button onclick="myFunction()">Try it</button>
+
+</body>
+</html>

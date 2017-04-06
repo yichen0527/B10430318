@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="myData">
+<br><br>
+<input type="number" id="myData2">
+<br><br>
+
+<script>
+  function add(){
+      var x, y;
+      x = parseFloat(document.getElementById("myData").value);
+      y = parseFloat(document.getElementById("myData2").value);
+      document.getElementById("result").innerHTML = x + y;
+  }
+  function sub(){
+      var x, y;
+      x = parseFloat(document.getElementById("myData").value);
+      y = parseFloat(document.getElementById("myData2").value);
+      document.getElementById("result").innerHTML = x - y;
+  }
+  function mul(){
+      var x, y;
+      x = parseFloat(document.getElementById("myData").value);
+      y = parseFloat(document.getElementById("myData2").value);
+      document.getElementById("result").innerHTML = x * y;
+  }
+  function div(){
+      var x, y;
+      x = parseFloat(document.getElementById("myData").value);
+      y = parseFloat(document.getElementById("myData2").value);
+      document.getElementById("result").innerHTML = x / y;
+  }
+  function zero(){
+      var x, y;
+      x = parseFloat(document.getElementById("myData").value="");
+      y = parseFloat(document.getElementById("myData2").value="");
+      document.getElementById("result").innerHTML = "";
+  }
+</script>
+
+<output id="result"></output>
+<br><br>
+<button onclick="add()">x+y</button>
+<button onclick="sub()">x-y</button>
+<button onclick="mul()">x*y</button>
+<button onclick="div()">x/y</button>
+<button onclick="zero()">C</button>
+
+</body>
+</html>
